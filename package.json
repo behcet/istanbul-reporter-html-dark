@@ -1,6 +1,6 @@
 {
   "name": "istanbul-reporter-html-dark",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Istanbul HTML reporter with dark mode support",
   "author": "behcet",
   "main": "index.js",
