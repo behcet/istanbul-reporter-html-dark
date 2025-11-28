@@ -1,0 +1,12 @@
+*.tgz
+.idea/
+node_modules/
+coverage/
+npm-debug.log
+.nyc_output/
+dist/
+package-lock.json
+yarn.lock
+.DS_Store
+lib/html-spa/assets/bundle.js
+lib/html-spa/assets/bundle.js.LICENSE.txt

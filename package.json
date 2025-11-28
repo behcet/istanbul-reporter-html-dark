@@ -1,0 +1,51 @@
+{
+  "name": "istanbul-reporter-html-dark",
+  "version": "1.0.0",
+  "description": "Istanbul HTML reporter with dark mode support",
+  "author": "behcet",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib/html",
+    "lib/html-spa/index.js",
+    "lib/html-spa/assets"
+  ],
+  "scripts": {
+    "prepare": "webpack --config lib/html-spa/webpack.config.js --mode production",
+    "build": "webpack --config lib/html-spa/webpack.config.js --mode production",
+    "build:watch": "webpack --config lib/html-spa/webpack.config.js --watch --mode development"
+  },
+  "dependencies": {
+    "html-escaper": "^2.0.0",
+    "istanbul-lib-report": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.5",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/behcet/istanbul-reporter-html-dark.git"
+  },
+  "keywords": [
+    "istanbul",
+    "coverage",
+    "reporter",
+    "html",
+    "dark-mode"
+  ],
+  "bugs": {
+    "url": "https://github.com/behcet/istanbul-reporter-html-dark/issues"
+  },
+  "homepage": "https://github.com/behcet/istanbul-reporter-html-dark",
+  "engines": {
+    "node": ">=18"
+  }
+}

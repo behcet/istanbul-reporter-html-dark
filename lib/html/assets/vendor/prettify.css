@@ -1,0 +1,104 @@
+/* Light mode - Higher contrast for coverage backgrounds */
+.pln { color: #343746; }           /* darker text */
+
+@media screen {
+    .str { color: #218021; }       /* darker green */
+    .kwd { color: #6c1bd1; }       /* darker purple */
+    .com { color: #7c7f93; }       /* darker gray */
+    .typ { color: #b06c00; }       /* darker orange */
+    .lit { color: #d84f00; }       /* darker peach */
+    .pun, .opn, .clo { color: #555869; } /* darker punctuation */
+    .tag { color: #0550c8; }       /* darker blue */
+    .atn { color: #b06c00; }       /* darker orange */
+    .atv { color: #218021; }       /* darker green */
+    .dec, .var { color: #b01030; } /* darker red */
+    .fun { color: #0550c8; }       /* darker blue */
+}
+
+@media print, projection {
+    .str { color: #060; }
+    .kwd { color: #006; font-weight: bold; }
+    .com { color: #600; font-style: italic; }
+    .typ { color: #404; font-weight: bold; }
+    .lit { color: #044; }
+    .pun, .opn, .clo { color: #440; }
+    .tag { color: #006; font-weight: bold; }
+    .atn { color: #404; }
+    .atv { color: #060; }
+}
+
+pre.prettyprint {
+    padding: 2px;
+    border: 1px solid #ccd0da;
+}
+
+ol.linenums {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
+    list-style-type: none;
+}
+
+li.L1, li.L3, li.L5, li.L7, li.L9 {
+    background: #e6e9ef;
+}
+
+/* Dark mode - Catppuccin Mocha (auto) */
+@media screen and (prefers-color-scheme: dark) {
+    .pln { color: #cdd6f4; }           /* text */
+    .str { color: #a6e3a1; }           /* green */
+    .kwd { color: #cba6f7; }           /* mauve */
+    .com { color: #6c7086; }           /* overlay0 */
+    .typ { color: #f9e2af; }           /* yellow */
+    .lit { color: #fab387; }           /* peach */
+    .pun, .opn, .clo { color: #9399b2; } /* overlay2 */
+    .tag { color: #89b4fa; }           /* blue */
+    .atn { color: #f9e2af; }           /* yellow */
+    .atv { color: #a6e3a1; }           /* green */
+    .dec, .var { color: #f38ba8; }     /* red */
+    .fun { color: #89b4fa; }           /* blue */
+
+    pre.prettyprint {
+        border-color: #45475a;
+    }
+
+    li.L1, li.L3, li.L5, li.L7, li.L9 {
+        background: #181825;
+    }
+}
+
+/* Manual theme toggle overrides */
+
+/* Dark mode - Catppuccin Mocha (manual) */
+.theme-dark .pln { color: #cdd6f4; }
+.theme-dark .str { color: #a6e3a1; }
+.theme-dark .kwd { color: #cba6f7; }
+.theme-dark .com { color: #6c7086; }
+.theme-dark .typ { color: #f9e2af; }
+.theme-dark .lit { color: #fab387; }
+.theme-dark .pun, .theme-dark .opn, .theme-dark .clo { color: #9399b2; }
+.theme-dark .tag { color: #89b4fa; }
+.theme-dark .atn { color: #f9e2af; }
+.theme-dark .atv { color: #a6e3a1; }
+.theme-dark .dec, .theme-dark .var { color: #f38ba8; }
+.theme-dark .fun { color: #89b4fa; }
+.theme-dark pre.prettyprint { border-color: #45475a; }
+.theme-dark li.L1, .theme-dark li.L3, .theme-dark li.L5, .theme-dark li.L7, .theme-dark li.L9 { background: #181825; }
+
+/* Light mode - Higher contrast (manual) */
+.theme-light .pln { color: #343746; }
+.theme-light .str { color: #218021; }
+.theme-light .kwd { color: #6c1bd1; }
+.theme-light .com { color: #7c7f93; }
+.theme-light .typ { color: #b06c00; }
+.theme-light .lit { color: #d84f00; }
+.theme-light .pun, .theme-light .opn, .theme-light .clo { color: #555869; }
+.theme-light .tag { color: #0550c8; }
+.theme-light .atn { color: #b06c00; }
+.theme-light .atv { color: #218021; }
+.theme-light .dec, .theme-light .var { color: #b01030; }
+.theme-light .fun { color: #0550c8; }
+.theme-light pre.prettyprint { border-color: #ccd0da; }
+.theme-light li.L1, .theme-light li.L3, .theme-light li.L5, .theme-light li.L7, .theme-light li.L9 { background: #e6e9ef; }
